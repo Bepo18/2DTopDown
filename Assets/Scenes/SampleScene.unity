@@ -492,7 +492,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 712035800519618848, guid: 78c6d6020c1ac584aacf1f0a5a8efd10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -538,9 +538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb1512184bb188248a4f3700ee4d48d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slashAnimPrefab: {fileID: 0}
-  slashAnimSpawnPoint: {fileID: 0}
-  playerController: {fileID: 0}
+  slashAnimPrefab: {fileID: 7904363972099031650, guid: 92056851be4643b488c6ec4b898a028a, type: 3}
+  slashAnimSpawnPoint: {fileID: 471208363}
 --- !u!1 &1259223683
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,7 +627,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8943998719802223876, guid: 322a69ed18fa8df44a7c60d5cb860274, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -9,14 +9,14 @@ public class Sword : MonoBehaviour
 
     private PlayerControls playerControls;
     private Animator myAnimator;
-    [SerializeField]private Movement playerController;
+    private Movement playerController;
     private ActiveWeapon activeWeapon;
 
     private GameObject slashAnim;
 
     private void Awake()
     {
-       
+        playerController = GetComponentInParent<Movement>();
         activeWeapon = GetComponentInParent<ActiveWeapon>();
         myAnimator = GetComponent<Animator>();
         playerControls = new PlayerControls();
@@ -49,7 +49,7 @@ public class Sword : MonoBehaviour
     {
         slashAnim.gameObject.transform.rotation = Quaternion.Euler(-180, 0, 0);
 
-        if (playerControls.FacingLeft)
+        if (playerController.FacingLeft)
         {
             slashAnim.GetComponent<SpriteRenderer>().flipX = true;
         }
@@ -59,7 +59,7 @@ public class Sword : MonoBehaviour
     {
         slashAnim.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
 
-        if (playerControls.FacingLeft)
+        if (playerController.FacingLeft)
         {
             slashAnim.GetComponent<SpriteRenderer>().flipX = true;
         }
