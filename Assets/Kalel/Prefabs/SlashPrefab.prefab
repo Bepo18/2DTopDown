@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5525322987473119218}
   - component: {fileID: 8356504048805003495}
   - component: {fileID: 4770232310679926656}
+  - component: {fileID: 6941163490299375414}
   m_Layer: 0
   m_Name: SlashPrefab
   m_TagString: Untagged
@@ -107,3 +108,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6941163490299375414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7904363972099031650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6d1defb204ac34499cc2c68d684ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

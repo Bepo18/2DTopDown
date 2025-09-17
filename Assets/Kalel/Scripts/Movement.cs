@@ -65,10 +65,12 @@ public class Movement : MonoBehaviour
         if (mousePos.x < playerScreenPoint.x)
         {
             mySpriteRenderer.flipX = true;
+            FacingLeft = true;
         }
         else
         {
             mySpriteRenderer.flipX = false;
+            FacingLeft = false;
         }
     }
 
