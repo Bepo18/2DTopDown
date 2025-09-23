@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3311011906291477979}
   - component: {fileID: 223446309214413388}
   - component: {fileID: 8635073298449784849}
+  - component: {fileID: 4900586307993255917}
   m_Layer: 0
   m_Name: SlimeRelleno
   m_TagString: Untagged
@@ -213,3 +214,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b5b67afbb9ec148a6d57a174305621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 3
+--- !u!114 &4900586307993255917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4510866693382739214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0586d2dcb68c2754987c0dd12d7f627a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockBackTime: 0.2
