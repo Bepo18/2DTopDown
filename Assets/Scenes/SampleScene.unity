@@ -1051,9 +1051,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeRelleno
       objectReference: {fileID: 0}
-    - target: {fileID: 4510866693382739214, guid: a38a9acd53cdd5a4d9f1125563c15d63, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 4900586307993255917, guid: a38a9acd53cdd5a4d9f1125563c15d63, type: 3}
+      propertyPath: knockBackTime
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
