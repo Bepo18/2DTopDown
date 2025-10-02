@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     public static Movement instance;
 
     [SerializeField] private float moveSpeed = 1f;
+   
 
     private PlayerControls playerControls;
     private Vector2 movement;
@@ -17,6 +18,8 @@ public class Movement : MonoBehaviour
     private SpriteRenderer mySpriteRenderer;
 
     private bool facingLeft = false;
+    
+
     private void Awake()
     {
         instance = this;
@@ -25,6 +28,7 @@ public class Movement : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
+
 
     private void OnEnable()
     {
@@ -76,5 +80,6 @@ public class Movement : MonoBehaviour
             FacingLeft = false;
         }
     }
+
 
 }
