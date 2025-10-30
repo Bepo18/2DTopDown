@@ -496,7 +496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 524258127}
-  - component: {fileID: 524258126}
+  - component: {fileID: 524258128}
   m_Layer: 0
   m_Name: WaveSpawner
   m_TagString: Untagged
@@ -504,27 +504,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &524258126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524258125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0364e045348fc454fb16d5e864678fc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies:
-  - enemyPrefab: {fileID: 301606282}
-    cost: 3
-  currWave: 0
-  enemiesToSpawn: []
-  spawnLocation: []
-  spawnIndex: 0
-  waveDuration: 0
-  spawnedEnemies: []
 --- !u!4 &524258127
 Transform:
   m_ObjectHideFlags: 0
@@ -534,12 +513,33 @@ Transform:
   m_GameObject: {fileID: 524258125}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524258128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524258125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c6ea2d0e6b24b443bb355569c09e891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalEnemies:
+  - {fileID: 301606282}
+  - {fileID: 301606282}
+  - {fileID: 301606282}
+  bossPrefab: {fileID: 301606282}
+  spawnPoints:
+  - {fileID: 524258127}
+  enemiesPerRound: 030000000500000008000000
+  timeBetweenRounds: 3
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3148,7 +3148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1911122900
 Transform:
   m_ObjectHideFlags: 0
